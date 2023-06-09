@@ -11,6 +11,8 @@ background: #e6e6e6;  overflow: clip;
     .t1{
         display: flex;height: 100px;background-color: rgb(122, 122, 122);
      ;z-index: 10;position: fixed;top: 0;left: 0;right: 0;
+     justify-content: space-between;align-items: center;
+     flex-direction: row;
     }
     .t2{
         display: flex;flex:1;height: 100%;position: relative;
@@ -32,11 +34,17 @@ border-radius: 25px;
 object-fit: cover;
 z-index: 2;
     }
-    .i2{position: absolute;
-width: 556px;
-height: 36px;
-left: 497px;display: flex;justify-content: space-between;
-top: 40px;}
+    .i2{
+        margin-left: 150px;margin-right: 150px;
+padding: 10px
+;display: flex;justify-content: space-between;
+flex: 1;
+}
+.b{
+    display: flex;
+    width: 300px;justify-content: space-between;
+    padding-right: 100px;
+}
 .b1{
     box-sizing: border-box;
 /* Auto layout */
@@ -46,11 +54,10 @@ justify-content: center;
 align-items: center;
 padding: 6px 17px;
 gap: 10px;
-position: absolute;
+
 width: 103px;
 height: 40px;
-left: 1373px;
-top: 30px;
+
 border: 1px solid #000000;
 border-radius: 10px;
 color: black;
@@ -64,11 +71,8 @@ justify-content: center;
 align-items: center;
 padding: 6px 17px;
 gap: 10px;
-position: absolute;
 width: 103px;
 height: 40px;
-left: 1547px;
-top: 30px;
 background: #fdfdfd;
 border-radius: 10px;
 color: rgb(0, 0, 0);
@@ -89,11 +93,11 @@ transform: scale(0.9);
 
 .ca{
     /* Make your Payment More Secure */
-position: absolute;
+
 width: 600px;
 height: 300px;
-left: 129px;
-top:50px;
+
+
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 800;
@@ -105,11 +109,11 @@ display: flex;
 }
 .cb{
     display: flex;flex-direction: column;
-position: absolute;
+
 width: 200px;
 height: 550px;
-left: 140px;
-top: 350px;
+
+
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
@@ -120,7 +124,7 @@ flex: 1;
 
 }
 .h1s0{
-    display: flex;position: relative;height: 100%;width: 50%;
+    display: flex;position: relative;height: 100%;width: 100%;
 }
 .cc{
 Width:174px;
@@ -152,11 +156,10 @@ border-radius: 100px;z-index:1;
 opacity: 0.1;
 }
 .h1s{display: flex;
-    position: absolute;
-width: 1311px;
-height: 760px;
-left: 0px;
-top: 50px;
+ margin-top: 50px;
+width: 100%;
+height: 80%;
+
 background-color: rgb(255, 3, 3); /* Fallback color */
 background-color: rgba(247, 247, 247, 1); /* Black w/opacity/see-through */
 backdrop-filter: blur(8px);
@@ -171,9 +174,8 @@ border-radius: 45px;
 .hx{
     position: absolute;
 width: 311px;
-height: 311px;
-left: 100px;
-top: 400px;
+height: 5%;
+top: 70%;left: 60%;
 opacity: 0.05;
 background: #05FFF0;
 border-radius: 150px;
@@ -181,8 +183,8 @@ border-radius: 150px;
 .hc{   position: absolute;
 width: 311px;
 height: 311px;
-left: 200px;
-top: 200px;
+left: 50%;
+top: 60%;
 opacity: 0.05;
 background: #3b1bca;
 border-radius: 150px;
@@ -191,7 +193,7 @@ border-radius: 150px;
 .hd{   position: absolute;
 width: 311px;
 height: 311px;
-left: 500px;
+left: 30%;
 top: 200px;
 opacity: 0.1;
 background: #e4e007;
@@ -201,7 +203,7 @@ border-radius: 150px;
 .hp{   position: absolute;
 width: 311px;
 height: 311px;
-left: 500px;
+left: 35%;
 top: 400px;
 opacity: 0.1;
 background: #e4e007;
@@ -211,8 +213,8 @@ border-radius: 150px;
 .hi{   position: absolute;
 width: 311px;
 height: 311px;
-left: 300px;
-top: 400px;
+left: 40%;
+top: 50%;
 opacity: 0.2;
 background: #00ff6a;
 border-radius: 150px;
@@ -238,14 +240,22 @@ border-radius: 150px;
     100%{
         transform: translatex(0px);
 
-    }    
-}
+    }  
+} 
+    @media(min-width: 1920px){
+        .hi,.hp,.hd,.hc,.hz,.hx{
+            width: 100%;
+        }
+
+    }
+
 .t{
     
 }   
 
 .bentrai{
     display: flex;flex:1;position: relative;
+    flex-direction: column;padding-left: 100px;padding-top: 50px;
 }
 .x{
     display: flex;position: absolute;
@@ -316,7 +326,7 @@ position: relative;width: 300px;height: 100%;
                         <div class="hd"></div>
                         <div class="hp"></div>
                         <div class="hi"></div>
-                        <img  class="con2" href="cat.jpg">
+                        
                     </div>  
                 </div>
            
